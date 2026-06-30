@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Computer-use cache for AI agents | Super</title>
+  <meta name="description" content="Computer-use cache for repeated AI agent workflows. Replay successful browser and desktop actions so automations get cheaper and more reliable over time." />
+  <link rel="canonical" href="https://app.getsupers.com/use-cases/computer-use-cache/" />
+  <meta property="og:url" content="https://app.getsupers.com/use-cases/computer-use-cache/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Computer-use cache for AI agents | Super" />
+  <meta property="og:description" content="Reuse successful computer actions to make repeated workflows cheaper and more reliable." />
+  <link rel="stylesheet" href="https://api.fontshare.com/v2/css?f[]=cabinet-grotesk@400,500,700,800,900&display=swap" />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <div class="ambient-grid"></div>
+  <div class="paper-noise"></div>
+  <div class="page">
+    <nav class="nav">
+      <div class="brand"><img src="https://storage.googleapis.com/cheatlayer/landing/icon-transparent-512.png" alt="Super" /></div>
+      <div class="nav-links">
+        <a href="/use-cases/">Use cases</a>
+        <a href="#workflow">Workflow</a>
+        <a href="#compare">Compare</a>
+      </div>
+      <div class="nav-cta">
+        <a class="btn btn-black" href="https://app.getsupers.com/general?login=1&open_login=1">Try Super</a>
+      </div>
+    </nav>
+
+    <header class="hero">
+      <div class="shell hero-inner">
+        <h1>Computer-use cache for AI agents that actually do the work</h1>
+        <p class="hero-sub">Run a computer task once. Reuse the successful actions again and again so repeated browser and desktop workflows get cheaper, faster, and more reliable.</p>
+        <div class="hero-actions">
+          <a class="btn btn-black" href="https://app.getsupers.com/general?login=1&open_login=1">Start with Super</a>
+          <a class="btn btn-white" href="#examples">See examples</a>
+        </div>
+        <div class="media-frame">
+          <video autoplay muted loop playsinline src="https://storage.googleapis.com/cheatlayer/landing/feature-computer-use-cache-impossible-agents.mp4"></video>
+        </div>
+      </div>
+    </header>
+
+    <section class="chapter" id="direct-answer">
+      <div class="shell">
+        <h2>What is a computer-use cache?</h2>
+        <div class="bento">
+          <div class="bento-item">
+            <p><strong>Direct answer:</strong> A <strong>computer-use cache</strong> stores the successful actions an AI agent took while operating a real browser or desktop, then replays those actions for future runs of the same workflow.</p>
+          </div>
+          <div class="bento-item">
+            <p>Instead of paying a model to re-plan clicks, typing, scrolling, and navigation every time, the cached action trace executes deterministically until something changes.</p>
+          </div>
+          <div class="bento-item">
+            <p>This mirrors emerging primitives in agent infrastructure that cache tool calls or scripts to reduce repeated model spend and improve reliability, as seen in open-source and browser-use systems.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter" id="workflow">
+      <div class="shell">
+        <h2>How Super’s computer-use cache works</h2>
+        <div class="compare-grid">
+          <div class="compare-card">
+            <h3>1) First run: full agent</h3>
+            <p>Super observes the screen, plans steps, and operates the computer using visual actions (clicks, typing, scrolling). This is similar to the computer-use loops described in model tool docs.</p>
+          </div>
+          <div class="compare-card">
+            <h3>2) Cache the successful actions</h3>
+            <p>When the task completes, Super saves the action sequence and context as a reusable memory for that workflow.</p>
+          </div>
+          <div class="compare-card highlight">
+            <h3>3) Repeat runs: replay</h3>
+            <p>On the next run, Super executes the cached actions directly. No re-planning unless the page changes.</p>
+          </div>
+          <div class="compare-card">
+            <h3>4) Auto-heal when needed</h3>
+            <p>If the UI changes, Super can fall back to a live agent run, then update the cache with the new successful path.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter" id="examples">
+      <div class="shell">
+        <h2>Repeated workflows where a computer-use cache shines</h2>
+        <div class="bento">
+          <div class="bento-item">
+            <h3>Daily ops dashboards</h3>
+            <p>Log in, navigate, export, and screenshot the same reports every morning.</p>
+          </div>
+          <div class="bento-item">
+            <h3>Marketplace maintenance</h3>
+            <p>Update listings, prices, or availability across sites that lack APIs.</p>
+          </div>
+          <div class="bento-item">
+            <h3>Customer support tooling</h3>
+            <p>Open internal tools, look up accounts, and perform repeat actions with human confirmation where required.</p>
+          </div>
+          <div class="bento-item">
+            <h3>Personal admin</h3>
+            <p>Recurring tasks like checking orders, bookings, or balances across the same apps.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter" id="compare">
+      <div class="shell">
+        <h2>How Super compares in the agent landscape</h2>
+        <div class="compare-grid">
+          <div class="compare-card">
+            <h3>ChatGPT</h3>
+            <p>World-class general assistant. Strong at one-off reasoning, writing, and planning, but repeated computer work typically re-runs the same steps without a durable cache.</p>
+          </div>
+          <div class="compare-card">
+            <h3>Gemini</h3>
+            <p>Pushing browser-native computer use. Powerful for live interaction, but reuse across personal workflows is still evolving.</p>
+          </div>
+          <div class="compare-card">
+            <h3>Grok</h3>
+            <p>Opinionated, real-time assistant with social context. Less focused on deterministic replay of computer actions.</p>
+          </div>
+          <div class="compare-card">
+            <h3>Siri</h3>
+            <p>Voice-first and deeply embedded in Apple devices. Limited for complex, cross-site browser automation.</p>
+          </div>
+          <div class="compare-card">
+            <h3>Folk & Orchids</h3>
+            <p>Part of the broader automation and agent market. Useful context, but not centered on reusable computer-use action caches.</p>
+          </div>
+          <div class="compare-card highlight">
+            <h3>Super</h3>
+            <p>Built for durable computer-use workflows with a reusable <strong>computer-use cache</strong> so repeated tasks improve over time instead of costing the same every run.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <div class="shell source-card">
+        <h2>Why this matters now</h2>
+        <p>Research and industry coverage increasingly highlight the cost and reliability challenges of agentic systems without reuse or accountability. Caching successful action traces is emerging as a practical solution for repeated workflows.</p>
+        <ul>
+          <li><a href="https://github.com/rohanarun/computer-use-cache">Open-source computer-use cache primitives</a></li>
+          <li><a href="https://developers.openai.com/api/docs/guides/tools-computer-use">Model-supported computer-use loops</a></li>
+          <li><a href="https://docs.browser-use.com/cloud/agent/cache-script">Deterministic rerun and cached scripts</a></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="shell">
+        <h2>Ready to reuse your computer workflows?</h2>
+        <p>Super is a personal AI agent that operates real computers and remembers how to do it.</p>
+        <a class="btn btn-black" href="https://app.getsupers.com/general?login=1&open_login=1">Try Super</a>
+      </div>
+    </section>
+
+    <section class="chapter">
+      <div class="shell">
+        <h2>Explore related use cases</h2>
+        <div class="compare-grid">
+          <a class="compare-card" href="https://app.getsupers.com/use-cases/order-food-with-ai/">Order food with AI</a>
+          <a class="compare-card" href="https://app.getsupers.com/use-cases/book-rides-with-ai/">Book rides with AI</a>
+          <a class="compare-card" href="https://app.getsupers.com/use-cases/text-message-ai-assistant/">Text message AI assistant</a>
+          <a class="compare-card" href="https://app.getsupers.com/use-cases/meta-display-ai-assistant/">Meta Display AI assistant</a>
+          <a class="compare-card" href="https://app.getsupers.com/use-cases/ai-agent-build-websites/">AI agent to build websites</a>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "name": "Use cases",
+      "item": "https://app.getsupers.com/use-cases/"
+    },{
+      "@type": "ListItem",
+      "position": 2,
+      "name": "Computer-use cache",
+      "item": "https://app.getsupers.com/use-cases/computer-use-cache/"
+    }]
+  }</script>
+
+  <script type="application/ld+json">{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [{
+      "@type": "Question",
+      "name": "Does a computer-use cache remove the need for models entirely?",
+      "acceptedAnswer": {"@type": "Answer","text": "No. The first run still uses a live agent. Cached runs replay actions, and the agent returns when something changes."}
+    },{
+      "@type": "Question",
+      "name": "Is human confirmation required?",
+      "acceptedAnswer": {"@type": "Answer","text": "For high-impact actions, Super supports assisted workflows where the user confirms before execution."}
+    }]
+  }</script>
+
+  <script src="https://unpkg.com/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
